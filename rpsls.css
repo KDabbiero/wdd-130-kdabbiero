@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 
-h1 {
+h2 {
     background-color: #000;
     color: white;
 }
@@ -44,7 +44,7 @@ section.battle {
     padding: 0.5em;
 }
 
-h2 {
+h3 {
     height: 100%;
     width: 100%;
     background-color: #000;
@@ -67,4 +67,12 @@ footer {
     grid-row-gap: 10px;
     justify-content: center;
     background-color:#a59132;
+}
+
+p {
+    font-size: small;
+}
+
+#refresh_button {
+    margin-bottom: 10px;
 }
