@@ -52,3 +52,7 @@ h1 { font-weight: 100; font-size: 2.5em; }
   #info {
     font-size: 22px;
   }
+
+  footer {
+    text-align: center;
+  }
