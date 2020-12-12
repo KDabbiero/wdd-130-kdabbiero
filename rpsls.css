@@ -4,7 +4,7 @@ body {
 }
 
 h2 {
-    background-color: #000;
+    background-color: #30362f;
     color: white;
 }
 div.row {
@@ -47,7 +47,7 @@ section.battle {
 h3 {
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #30362f;
     color: white;
 }
 
