@@ -1,12 +1,17 @@
 body {
-    background-color: #f9c784;
+    background-color: #625834;
     text-align: center;
+}
+
+h1 {
+    background-color: #000;
+    color: white;
 }
 div.row {
     height: 100%;
-    width: 50%;
+    width: 100%;
     margin: auto;
-    background-color: #273C2C;
+    background-color: #000;
     color: white;
 }
 
@@ -20,17 +25,21 @@ div.row {
 
 section.battle {
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
     justify-content: space-evenly;
-    background-color: #485696;
+    background-color: #a59132;
     color: white;
 }
-#computer{
+.computer{
+    display: grid;
+    grid-row-gap: 10px;
     margin: 0.5em;
     padding: 0.5em;
 }
 
-#user{
+.user{
+    display: grid;
+    grid-row-gap: 10px;
     margin: 0.5em;
     padding: 0.5em;
 }
@@ -38,32 +47,24 @@ section.battle {
 h2 {
     height: 100%;
     width: 100%;
-    background-color: #273c2c;
+    background-color: #000;
     color: white;
 }
 
-#play_again{
-    background-color: #485696;
+.play-again{
+    display: grid;
+    background-color: #000;
     color: white;
 }
 
 footer {
     text-align: center;
+    color: white;
 }
 
-
-/*#cpu_throw {
-    display: flex;
-    align-items: center;
-    background-color: #273C2C;
-    color: white;
-    
-}
-
-#user_throw {
-    display: flex;
-    align-items: center;
-    background-color: #273C2C;/
-    color: white;
-    
+.winner {
+    display: grid;
+    grid-row-gap: 10px;
+    justify-content: center;
+    background-color:#a59132;
 }

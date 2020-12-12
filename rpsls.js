@@ -1,6 +1,6 @@
 const rock = {
     name: 'Rock',
-    picture: '/images/rock.png',
+    picture: 'rock.png',
     getPicture() {
     return this.picture;
     }
@@ -8,7 +8,7 @@ const rock = {
 
 const paper = {
     name: 'Paper',
-    picture: '/images/paper.jpg',
+    picture: 'paper.jpg',
     getPicture () {
     return this.picture;
     }
@@ -16,7 +16,7 @@ const paper = {
 
 const scissors = {
     name: 'Scissors',
-    picture: '/images/scissors.jpg',
+    picture: 'scissors.jpg',
     getPicture () {
         return this.picture;
     }
@@ -24,7 +24,7 @@ const scissors = {
 
 const lizard = {
     name: 'Lizard',
-    picture: '/images/lizard.jpg',
+    picture: 'lizard.jpg',
     getPicture(){
         return this.picture;
     }
@@ -32,7 +32,7 @@ const lizard = {
 
 const spock = {
     name: 'Spock',
-    picture: '/images/spock.jpg',
+    picture: 'spock.jpg',
     getPicture () {
         return this.picture;
     }
@@ -48,43 +48,43 @@ const random1 = array[Math.floor(Math.random() * array.length)];
 
 const random2 = array[Math.floor(Math.random() * array.length)];
 document.getElementById("cpu_throw").onclick = () =>{
-    document.getElementById("#cpu_image").src = random1;
+    document.getElementById("cpu_image").src = random1;
     return;
 };
 
 document.getElementById("user_throw").onclick  = () => {
-    document.getElementById("#user_image").src = random2;
+    document.getElementById("user_image").src = random2;
     return;
 }
 
 document.getElementById("winner_dec").onclick = () => {
     if (random1 === random2)
     {
-        document.getElementById("#winner_image").src = "/images/tie.gif";
+        document.getElementById("winner_image").src = "tie.gif";
     }
     else if (random1 === rock.picture && (random2 === lizard.picture || random2 === scissors.picture))
     {
-        document.getElementById("#winner_image").src = "images/rock.png";
+        document.getElementById("winner_image").src = "rock.png";
     }
     else if (random1 === paper.picture && (random2 === rock.picture || random2 === spock.picture))
     {
-        document.getElementById("#winner_image").src = "images/paper.jpg";
+        document.getElementById("winner_image").src = "paper.jpg";
     }
     else if (random1 === scissors.picture && (random2 === lizard.picture || random2 === paper.picture))
     {
-        document.getElementById("#winner_image").src = "images/scissors.jpg";
+        document.getElementById("winner_image").src = "scissors.jpg";
     }
     else if (random1 === lizard.picture && (random2 === spock.picture || random2 === paper.picture))
     {
-        document.getElementById("#winner_image").src = "images/lizard.jpg";
+        document.getElementById("winner_image").src = "lizard.jpg";
     }
     else if (random1 === spock.picture && (random2 === rock.picture || random2 === scissors.picture))
     {
-        document.getElementById("#winner_image").src = "images/spock.jpg";
+        document.getElementById("winner_image").src = "spock.jpg";
     } 
     else 
     {
-        document.getElementById("#winner_image").src = random2;
+        document.getElementById("winner_image").src = random2;
     }
 
 }
